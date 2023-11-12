@@ -474,7 +474,7 @@ const flags = ref({
   connectOnStart: true,
   autoReconnect: false,
   updateInProgress: false,
-  installFromFile: false,
+  installFromFile: true,
   logsPopup: false,
   settingsView: false,
   flipperOccupiedDialog: false,

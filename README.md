@@ -1,3 +1,3 @@
-# lab.flipper.net
+# flipperdojo.com
 
-Web platform for your Flipper
+Web platform for your Flipper, forked from lab.flipper.net

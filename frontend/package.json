@@ -1,9 +1,9 @@
 {
-  "name": "lab.flipper.net",
+  "name": "flipperdojo.com",
   "version": "0.0.1",
   "description": "Web platform for your Flipper",
-  "productName": "lab.flipper.net",
-  "author": "Slipn3r <61992469+Slipn3r@users.noreply.github.com>",
+  "productName": "flipperdojo.com",
+  "author": "Slipn3r <61992469+Slipn3r@users.noreply.github.com>, noproto",
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.vue ./",

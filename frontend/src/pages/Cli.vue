@@ -190,7 +190,7 @@ const startServer = () => {
   flags.value.serverToggling = true
   roomName.value = props.info.hardware.name
   if (!socket.value) {
-    socket.value = io('ws://lab.flipper.net:3000')
+    socket.value = io('ws://flipperdojo.com:3000')
   }
 
   socket.value.on('connect', () => {

@@ -154,8 +154,8 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: 'lab.flipper.net',
-        short_name: 'lab.flipper.net',
+        name: 'flipperdojo.com',
+        short_name: 'flipperdojo.com',
         description: 'Web platform for your Flipper',
         display: 'standalone',
         orientation: 'portrait',
@@ -221,7 +221,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'lab.flipper.net'
+        appId: 'flipperdojo.com'
       },
 
       // "chain" is a webpack-chain object https://github.com/neutrinojs/webpack-chain
