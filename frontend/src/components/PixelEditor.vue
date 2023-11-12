@@ -1,5 +1,6 @@
 <template>
   <div class="fit flex justify-center paint" @mouseup="mouseUp">
+    <!-- TODO: Dark mode support (this should change to bg-grey-10 in dark mode) -->
     <div v-if="pe" class="controls q-pa-xs rounded-borders bg-grey-2">
       <q-btn-toggle
         v-model="toolModel"

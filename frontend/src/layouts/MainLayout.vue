@@ -54,7 +54,7 @@
 
     <q-drawer
       v-model="leftDrawer"
-      class="bg-grey-2"
+      :class="drawerClass"
       style="overflow-x: hidden"
       :width="175"
       :breakpoint="900"
@@ -166,6 +166,14 @@
               </div>
 
               <div class="q-my-md q-px-md">
+                <q-toggle
+                  size="2.25rem"
+                  dense
+                  class="q-my-sm"
+                  v-model="flags.darkMode"
+                  @click="toggleDarkMode"
+                  label="Dark mode"
+                ></q-toggle>
                 <q-toggle
                   size="2.25rem"
                   dense
@@ -373,7 +381,7 @@
 
 <script setup>
 import { ref, defineEmits, computed, watch, onMounted } from 'vue'
-import { useQuasar } from 'quasar'
+import { useQuasar, Dark } from 'quasar'
 import { useRoute, useRouter } from 'vue-router'
 import ExternalLink from 'components/ExternalLink.vue'
 import RouterLink from 'components/RouterLink.vue'
@@ -471,6 +479,7 @@ const flags = ref({
   portSelectRequired: false,
   connected: false,
   rpcActive: false,
+  darkMode: true,
   connectOnStart: true,
   autoReconnect: false,
   updateInProgress: false,
@@ -485,7 +494,11 @@ const flags = ref({
   catalogEnabled: true,
   catalogChannelProduction: true
 })
+Dark.set(flags.value.darkMode)
 const leftDrawer = ref(true)
+const drawerClass = computed(() => {
+  return $q.dark.isActive ? 'bg-grey-10' : 'bg-grey-2'
+})
 const linksMenu = ref(false)
 const reconnectLoop = ref(null)
 const connectionStatus = ref('Ready to connect')
@@ -739,6 +752,10 @@ const autoReconnect = () => {
   }
 }
 
+const toggleDarkMode = () => {
+  localStorage.setItem('darkMode', flags.value.darkMode)
+  Dark.set(flags.value.darkMode)
+}
 const toggleConnectOnStart = () => {
   localStorage.setItem('connectOnStart', flags.value.connectOnStart)
 }
