@@ -1,6 +1,6 @@
 {
-    "name": "Flipper Lab",
-    "short_name": "Flipper Lab",
+    "name": "Flipper Dojo",
+    "short_name": "Flipper Dojo",
     "display": "standalone",
     "start_url": "/",
     "background_color": "#fff",

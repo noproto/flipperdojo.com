@@ -14,7 +14,7 @@
 
         <img
           v-show="!$q.screen.xs"
-          src="../assets/flipper_lab_logo_monochrome.svg"
+          src="../assets/flipperdojo_logo_monochrome.svg"
           class="q-ml-xs"
           style="height: 36px;"
         />
