@@ -1,7 +1,7 @@
 <template>
   <q-layout view="hhh LpR fff">
     <q-header>
-      <q-toolbar>
+      <q-toolbar style="padding: 0 0px">
         <q-btn
           v-if="$q.screen.width <= 900"
           @click="leftDrawer = !leftDrawer"
@@ -14,9 +14,9 @@
 
         <img
           v-show="!$q.screen.xs"
-          src="../assets/flipperdojo_logo_monochrome.svg"
+          src="../assets/flipperdojo_logo.svg"
           class="q-ml-xs"
-          style="height: 36px;"
+          style="height: 66px;"
         />
 
         <q-space />
