@@ -6,9 +6,9 @@ import _ from 'lodash'
 let API_ENDPOINT = process.env.ARCHIVARIUS_API_ENDPOINT
 if (localStorage.getItem('catalogChannel') !== null) {
   if (localStorage.getItem('catalogChannel') === 'production') {
-    API_ENDPOINT = 'https://catalog.flipperzero.one/api/v0'
+    API_ENDPOINT = 'https://catalog.flipperdojo.com/api/v0'
   } else {
-    API_ENDPOINT = 'https://catalog.flipp.dev/api/v0'
+    API_ENDPOINT = 'https://catalog.dolphindojo.com/api/v0'
   }
 }
 

@@ -51,8 +51,8 @@ module.exports = configure(function (ctx) {
 
       env: {
         ARCHIVARIUS_API_ENDPOINT: process.env.PRODUCTION
-          ? 'https://catalog.flipperzero.one/api/v0'
-          : 'https://catalog.flipp.dev/api/v0',
+          ? 'https://catalog.flipperdojo.com/api/v0'
+          : 'https://catalog.dolphindojo.com/api/v0',
         PRODUCTION: process.env.PRODUCTION
       },
       // transpile: false,
